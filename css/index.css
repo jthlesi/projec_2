@@ -139,31 +139,26 @@ header {
 #section_cha {
     width: 100%;
     height: 700px;
-    background: gray;
     margin: 0 auto;
     display: flex;
-}
-
-#section_cha .container{
-    background: white;
 }
 
 #pic_cha {
     width: 50%;
     height: 700px;
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
 #pic_cover {
     height: 200px;
     background: orange;
-    z-index: -1;
+    z-index: 1;
     position: absolute; 
     bottom: 0; 
     left: -20px;
     right: -20px;
+    display: flex;
+    justify-content: center;
 }
 
 #pic_photo{
@@ -172,9 +167,9 @@ header {
     background-image: url(../img/cha.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 700px;
+    background-size: 95% 700px;
     position: relative;
-    z-index: 5;
+    top:-500px
 }
 
 
@@ -184,6 +179,8 @@ header {
 
 #section_txt2 .container {
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #section_pic {
@@ -209,12 +206,10 @@ header {
     height: 100%;
 }
 
-#section_sta {
-    height: 1000px;
-}
-
 #section_sta .container {
     flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #sta_txt {
@@ -308,6 +303,8 @@ header {
 
 #section_txt3>.container {
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #section_exh {
