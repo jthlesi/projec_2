@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="javascript/javascript.js"></script>
 </head>
 
 <body>
@@ -217,11 +218,14 @@
                     </div>
                     <div class="rev_bot"><p>클로드 모네는 인상주의 회화의 창시자, 지도자, 확고한 지지자였던 프랑스의 화가입니다. 서양 미술사에서 가장 중요하고 인기 있는 인물 중 한 명으로 명성을 유지했습니다</p></div>
                 </div>
-
-
+                <div id="current">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
 
             </div>
 
+            </div>
+            <script src="javascript/javascript.js"></script>
         </div>
     </div>
 
@@ -318,25 +322,25 @@
                             modernism, especially in his attempts to paint nature as he perceived it.</p>
                     </div>
                     <div id="foot_icon">
-                        <div class="foot_icon_box" style="background-image: url(img/twitter_icon.png)"></div>
-                        <div class="foot_icon_box" style="background-image: url(img/facebook_icon.png)"></div>
-                        <div class="foot_icon_box" style="background-image: url(img/instagram_icon.png)"></div>
+                        <div class="foot_icon_box" style="background-image: url('../img/twitter_icon.png')"></div>
+                        <div class="foot_icon_box" style="background-image: url('img/facebook_icon.png')"></div>
+                        <div class="foot_icon_box" style="background-image: url('img/instagram_icon.png')"></div>
                     </div>
     
                 </div>
                 <div id="foot_center">
                     <h2>Category</h2>
                     <ul id="foot_list">
-                        <li><a href="#">회화</a></li>
-                        <li><a href="#">연작</a>
+                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>회화</a></li>
+                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>연작</a>
                             <ul id="foot_list2">
-                                <li><a href="#">수련</a></li>
-                                <li><a href="#">루앙 대성당</a></li>
-                                <li><a href="#">국회 의사당 </a></li>
+                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>수련</a></li>
+                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>루앙 대성당</a></li>
+                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>국회 의사당 </a></li>
                             </ul>
                         </li>
     
-                        <li><a href="#">관련 작품</a></li>
+                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>관련 작품</a></li>
     
                     </ul>
     
@@ -352,16 +356,16 @@
                     <h2>문의 사항</h2>
                     <ul id="foot_list3">
                         <li>
-                            <div class="foot_icon2"><img src="img/map_icon.png"></div>
-                            <div class="foot_right_txt">203 Fake St. Mountain View, San Francisco, California, USA</div>
+                            <div class="foot_icon2"><i class="fa fa-map"></i></div>
+                            <div class="foot_right_txt"><p>203 Fake St. Mountain View, San Francisco, California, USA</p></div>
                         </li>
                         <li>
-                            <div class="foot_icon2"><img src="img/phone_icon.png"></div>
-                            <div class="foot_right_txt">+2 392 3929 210</div>
+                            <div class="foot_icon2"><i class="fa fa-phone"></i></div>
+                            <div class="foot_right_txt"><p>+2 392 3929 210</p></div>
                         </li>
                         <li>
-                            <div class="foot_icon2"><img src="img/send_icon.png"></div>
-                            <div class="foot_right_txt">info@yourdomain.com</div>
+                            <div class="foot_icon2"><i class="fa fa-paper-plane"></i></div>
+                            <div class="foot_right_txt"><p>info@yourdomain.com</p></div>
                         </li>
                     </ul>
     
