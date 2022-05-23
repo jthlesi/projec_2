@@ -217,6 +217,7 @@ header {
 #section_txt2 h2{
     font-family: 'EB Garamond', sans-serif;
     font-size: 7vh;
+    letter-spacing: 4px;
 }
 
 #section_txt2 p{
@@ -320,7 +321,7 @@ header {
     background-position: center;
     background-size: 50px 50px;
     position: relative;
-    top:15px;
+    top:10px;
     left: 15px;
 }
 
@@ -500,12 +501,10 @@ header {
 .exh_box {
     width: 25%;
     padding: 12px;
-    background: hotpink;
     height: 680px;
 }
 
 .exh_photo {
-    background: green;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -516,7 +515,6 @@ header {
 .exh_txt {
     width: 100%;
     height: 50%;
-    background: gray;
     padding: 20px;
 }
 
@@ -525,6 +523,16 @@ header {
     margin-right: 10px;
 }
 
+.exh_txt i:nth-of-type(2){
+    margin-left: 20px;
+}
+
+#section_exh span{
+    font-size: 2vh; 
+    font-family: 'Poppins', sans-serif;
+    color:orange
+
+}
 #section_exh h2 {
     font-size: 4vh; 
     font-weight: 700;
@@ -532,7 +540,13 @@ header {
     letter-spacing: 3px;
     margin: 10px 0 20px 0;
 }
+#section_exh h2:hover{
+    cursor: pointer;
+    color:orange;
+    transition: all 0.3s ease-in;
 
+
+}
 #section_exh p{
     font-size: 2vh; 
     font-family: 'Poppins', sans-serif;
@@ -555,14 +569,94 @@ header {
 
 #map {
     width: 50%;
-    background: brown;
-    height: 500px;
+    height: 600px;
 }
 
+#map_google{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 #con_box {
     width: 50%;
-    background: navajowhite;
-    height: 500px;
+    height: 600px;
+    padding:50px;
+
+}
+#con_box p{
+    font-size: 2vh; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+#con_box h3{
+    font-size: 5vh; 
+    font-weight: 700;
+    font-family: 'EB Garamond', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    
+}
+#con_box span{
+    font-size: 2vh; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+#wrap_con{
+    display: flex;
+    width: 100%;
+    height:85px
+}
+
+.mybox{
+    width:calc(100% / 3);
+    height: 85px;
+    word-wrap: break-word;
+}
+#wrap_input{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name{
+    width: 49%;
+    height: 45px;
+}
+
+#mail{
+    width: 49%;
+    height: 45px;
+}
+#subj{
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+}
+input{
+    border:none;
+    
+}
+
+input:focus{
+    outline: orange solid 2px;
+    border-radius: 2px;
+}
+
+#msg {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100px;
+}
+#msg:focus{
+    outline: orange solid 2px;
+    border-radius: 2px;
+}
+
+
+#section_con #btn{
+    width: 140px;
+    height: 40px;
+    padding-top: 10px;
 }
 
 
