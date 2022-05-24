@@ -357,8 +357,9 @@ header {
     letter-spacing: 3px;
 }
 
-
-
+#section_rev{
+background: #f8f8f8;
+}
 #section_rev .container {
     flex-wrap: wrap;
     padding-top: 130px;
@@ -490,7 +491,9 @@ header {
 }
 
 
-
+#section_txt3{
+    background: #f8f8f8;
+}
 
 #section_txt3 .container {
     justify-content: center;
@@ -518,7 +521,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    background: #f8f8f8;
 }
 
 .exh_box {
