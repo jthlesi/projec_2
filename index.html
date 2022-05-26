@@ -13,6 +13,78 @@
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <script src="javascript/javascript.js"></script>
+    <style>
+@media (max-width:599px){
+    #top h1{
+        font-size: 14vw;
+    }
+    #top h2{
+        font-size: 5vw;
+    }
+    .gall{
+    width:100%
+}
+
+.count{
+    width:100%;
+}
+.exh_box{
+    width: 100%;
+}
+}
+
+
+@media (min-width:600px) and (max-width:1000px){
+    #top h1{
+        font-size: 14vw;;
+    }
+    #top h2{
+        font-size: 4vw;
+    }
+    #section_txt h2{
+        font-size: 3vw;
+    }
+    #txt_cha h2{
+    font-size: 5vw;
+}
+#txt_cha p{
+    font-size: 2vw;
+}
+.gall{
+    width:50%
+}
+
+.count{
+    width:50%;
+}
+.exh_box{
+    width: 50%;
+}
+#wrap_con{
+    height: auto;
+    flex-direction: column;
+}
+.mybox{
+    width:100%;
+    height: auto;
+    word-wrap: normal;
+}
+
+}
+
+@media (min-width:1000px) and (max-width:1320px){
+    .container {
+        width:100%
+    }
+    #top h1{
+        font-size: 14vw;;
+    }
+    #sticky{
+        width:100%
+    }
+}
+    </style>
+
 
 </head>
 
@@ -163,8 +235,8 @@
 
             </div>
             <div id="slide">
-            <div id="rev_slide">
-                <div class="rev_box">
+            <ul id="rev_slide">
+                <li class="rev_box">
                     <div class="rev_top">
                         <div class="rev_icon" style="background-image:url(img/rev1.jpeg)"><div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div></div>
                         <div class="rev_cha">
@@ -179,8 +251,8 @@
                     <div class="rev_bot">
                         <p>모네는 신의 눈을 가진 유일한 인간이다</p>
                     </div>
-                </div>
-                <div class="rev_box">
+                </li>
+                <li class="rev_box">
                     <div class="rev_top">
                         <div class="rev_icon" style="background-image:url(img/rev2.png)"><div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div></div>
                         <div class="rev_cha">
@@ -196,8 +268,8 @@
                     <div class="rev_bot">
                         <p>그림. 무언가로 보이면 그것으로 족하다</p>
                     </div>
-                </div>
-                <div class="rev_box">
+                </li>
+                <li class="rev_box">
                     <div class="rev_top">
                         <div class="rev_icon" style="background-image:url(img/rev3.jpg)"><div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div></div>
                         <div class="rev_cha">
@@ -206,9 +278,9 @@
                         </div>
 
                     </div>
-                    <div class="rev_bot"><p>이제 막 그리기 시작한 벽지도 이 바다 풍경보다는 더 완성된 상태일 것</p> <span>-모네의 화풍이 인정받기전</span></div>
-                </div>
-                <div class="rev_box">
+                    <div class="rev_bot"><p>이제 막 그리기 시작한 벽지도 이 바다 풍경보다는 더 완성된 상태일 것</p></div>
+                </li>
+                <li class="rev_box">
                     <div class="rev_top">
                         <div class="rev_icon"style="background-image:url(img/rev3.jpg)"><div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div></div>
                         <div class="rev_cha">
@@ -218,14 +290,17 @@
 
                     </div>
                     <div class="rev_bot"><p>클로드 모네는 인상주의 회화의 창시자, 지도자, 확고한 지지자였던 프랑스의 화가입니다. 서양 미술사에서 가장 중요하고 인기 있는 인물 중 한 명으로 명성을 유지했습니다</p></div>
-                </div>
+                </li>
             </div>    
 
-            </div>        
-            <div id="current">
-                <span class="dot" onclick="currentSlide()"></span>
-                <span class="dot" onclick="currentSlide()"></span>
-            </div>
+                   
+            <div class="pagination">
+                <ul>
+                  <li class="dot on active"></li>
+                  <li class="dot"></li>
+                  </ul>
+                  </div>
+                </div>
             <script src="javascript/javascript.js"></script>
         </div>
     </div>
@@ -276,34 +351,39 @@
 
     <div id="section_con" class="section">
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.2576149203943!2d126.83556042922862!3d37.318106165296776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f1b5204f67f%3A0xe91fdc2d6b37c5d4!2z7L2U7Iqk66qo7ZSE65287J6Q!5e0!3m2!1sko!2skr!4v1653285365871!5m2!1sko!2skr" id="map_google"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.2576149203943!2d126.83556042922862!3d37.318106165296776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f1b5204f67f%3A0xe91fdc2d6b37c5d4!2z7L2U7Iqk66qo7ZSE65287J6Q!5e0!3m2!1sko!2skr!4v1653285365871!5m2!1sko!2skr"
+                id="map_google"></iframe>
         </div>
-
+        
         <div id="con_box">
             <h3>Contact us</h3>
             <p>전화, 이메일 등을 통해 문의하세요.</p>
             <div id="wrap_con">
-            <div class="mybox"><span>
-                주소
-            </span>
-        <p>경기도 안산시 단원구 고잔동 535-2</p></div>
-            <div class="mybox"><span>
-                메일
-            </span>
-        <p>info@mysite.com</p></div>
-            <div class="mybox"><span>
-                전화번호
-            </span>
-        <p>010 123 4567</p></div>
+                <div class="mybox"><span>
+                        주소
+                    </span>
+                    <p>경기도 안산시 단원구 고잔동 535-2</p>
+                </div>
+                <div class="mybox"><span>
+                        메일
+                    </span>
+                    <p>info@mysite.com</p>
+                </div>
+                <div class="mybox"><span>
+                        전화번호
+                    </span>
+                    <p>010 123 4567</p>
+                </div>
+            </div>
+            <div id="wrap_input">
+                <input type="text" id="name" placeholder="이름">
+                <input type="text" id="mail" placeholder="Email">
+                <input type="text" id="subj" placeholder="제목">
+                <textarea name="" id="msg" cols="30" rows="10" placeholder="메시지를 작성해 주세요"></textarea>
+            </div>
+            <div id="btn">보내기</div>
         </div>
-        <div id="wrap_input">
-            <input type="text" id="name" placeholder="이름">
-            <input type="text" id="mail" placeholder="Email">
-            <input type="text" id="subj" placeholder="제목">
-            <textarea name="" id="msg" cols="30" rows="10" placeholder="메시지를 작성해 주세요"></textarea>
-        </div>
-        <div id="btn">보내기</div>
-    </div>
 
 
 
