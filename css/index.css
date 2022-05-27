@@ -9,7 +9,9 @@
 .fa:before {
     font-family: 'Font Awesome 5 Free','Font Awesome 5 Brands';
 }
-
+.fa{
+    font-weight: 900 !important;
+}
 h2, h3 {
     font-family: 'EB Garamond', sans-serif;
 }
@@ -77,13 +79,29 @@ nav {
     align-content: center;
 }
 
+#small{
+    display: none;
+}
+#small:hover{
+    cursor: pointer;
+}
+#small i{
+    font-size: 30px;
+    position: absolute;
+    top:20px;
+    right: 30px;
+}
+
+
+
 #navbar a{
     color: black;
+    font-size: 1.3vw;
 }
 
 #navbar li {
     padding: 25px;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -99,7 +117,7 @@ header {
 }
 
 #top {
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 #top h2 {
@@ -677,7 +695,7 @@ input:focus{
 footer {
     height: auto;
     background: black;
-    padding-top: 100px;
+    padding:70px 0;
     
 }
 
@@ -724,6 +742,7 @@ footer .container {
 #foot_left {
     width: 25%;
     height: auto;
+    padding: 10px;
 }
 
 #foot_left #logo {
@@ -755,8 +774,8 @@ font-size: 13px;
 
 #foot_center {
     width: 20%;
-    height: 500px;
-
+    height: auto;
+    padding: 10px;
 }
 
 #foot_center a:hover{
@@ -772,7 +791,8 @@ font-size: 13px;
 
 #foot_right {
     width: 25%;
-    height: 500px;
+    height: auto;
+    padding: 10px;
 }
 
 #foot_right i{

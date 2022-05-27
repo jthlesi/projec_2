@@ -25,12 +25,186 @@
     width:100%
 }
 
+#section_cha .container {
+    flex-wrap: wrap;
+}
+
+#pic_cha {
+    width: 100%;
+}
+
+#txt_cha {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+
+#txt_cha h2{
+    font-size: 7vw;
+}
+
+#txt_cha p{
+    font-size: 3vw;
+}
+
+.hover {
+    opacity:0.5; 
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+.gal_pic:hover .hover{
+    opacity: 0.8;
+    background: black;
+}
+
+.hover h3{
+    font-size:6vw;
+    padding:100px 50px 0 50px;
+}
+
+.hover p{
+    font-size: 3vw;
+    padding:50px 50px 0 50px;
+}
+
 .count{
     width:100%;
+    margin-top: 30px;
+}
+
+.icon{
+    width: 40%;
+    left:40px
+}
+
+.count_txt {
+    width: 60%;
 }
 .exh_box{
     width: 100%;
 }
+
+#section_exh h2{
+    font-size: 5vw; 
+    text-align: center;
+}
+
+#section_exh p{
+    font-size: 3vw; 
+}
+
+#section_exh span{
+    font-size: 3vw; 
+}
+
+#wrap_con{
+    height: auto;
+    flex-direction: column;
+}
+.mybox{
+    width:100%;
+    height: auto;
+    word-wrap: normal;
+}
+
+#section_con {
+    flex-direction: column-reverse;
+}
+#map{
+    width:100%;
+    height: 500px;
+}
+#con_box{
+    width: 100%;
+}
+
+#foot_left {
+    width: 100%;
+    height: auto;
+}
+#name{
+    width: 100%;
+}
+
+#mail{
+    width: 100%;
+    margin-top: 20px;
+
+}
+#foot_left{
+    padding: 0 30px;
+}
+
+footer p{
+    font-size: 3vw;
+}
+footer h2{
+    font-size: 7vw;
+}
+#foot_center{
+    margin-top: 100px;
+    width:100%;
+    padding: 0 30px;
+}
+
+#foot_center a{
+    font-size: 3vw;
+}
+
+#foot_right{
+    margin-top: 100px;
+    width:100%;
+    padding: 0 30px;
+
+}
+footer .container {
+    flex-wrap: wrap;
+}
+
+#small{
+    display: block;
+}
+
+#navbar{
+    width:50%;
+    display: none;
+}
+
+#navbar_small{
+    padding-right: 30px;
+    width: 100%;
+    height: auto;
+    background: orange;
+    position: fixed;
+    top: -400px;
+    left: 0;
+}
+
+#navbar_small.open{
+    top: 75px;
+}
+
+
+#logo{
+    margin-left: 30px;
+}
+
+footer #logo{
+    margin-left: 10px;
+}
+#navbar_small li a{
+    display: block;
+    color: black;
+    font-size: 4vh;
+    text-align: left;
+    line-height: 2;
+    margin-left: 30px;
+}
+
 }
 
 
@@ -54,6 +228,28 @@
     width:50%
 }
 
+.hover {
+    opacity:0.5; 
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+.gal_pic:hover .hover{
+    opacity: 0.8;
+    background: black;
+}
+
+.hover h3{
+    font-size:4vw;
+    padding:60px 50px 0 50px;
+}
+
+.hover p{
+    font-size: 2vw;
+    padding:50px 50px 0 50px;
+}
+
 .count{
     width:50%;
 }
@@ -70,6 +266,63 @@
     word-wrap: normal;
 }
 
+#foot_left {
+    width: 50%;
+    height: auto;
+}
+#foot_center{
+    width:40%
+}
+
+#foot_right{
+    margin-top: 100px;
+    width:70%
+}
+footer .container {
+    flex-wrap: wrap;
+}
+
+#small{
+    display: block;
+}
+
+#navbar{
+    width:50%;
+    display: none;
+}
+
+#navbar_small{
+    padding-right: 30px;
+    width: 100%;
+    height: auto;
+    background: orange;
+    position: fixed;
+    top: -300px;
+    left: 0;
+}
+
+#navbar_small.open{
+    top: 75px;
+}
+
+
+#logo{
+    margin-left: 30px;
+}
+#navbar_small li a{
+    display: block;
+    color: black;
+    font-size: 4vh;
+    text-align: left;
+    line-height: 2;
+    margin-left: 30px;
+}
+
+#sticky{
+    flex-wrap: wrap;
+}
+
+
 }
 
 @media (min-width:1000px) and (max-width:1320px){
@@ -82,7 +335,21 @@
     #sticky{
         width:100%
     }
+    #navbar a{
+    font-size: 1.5vw;
 }
+#navbar_small{
+    display: none;
+}
+}
+
+@media (min-width:1320px){
+    #navbar_small{
+    display: none;
+}
+}
+
+
     </style>
 
 
@@ -102,9 +369,24 @@
                     <li><a href="#section_txt3" class="move">NEWS</a></li>
                     <li><a href="#section_con" class="move">CONTACT</a></li>
                 </ul>
+                <div id="small">
+                
+                <i class="ham fa fa-bars"></i>
+            </div>
+            
             </nav>
+            
         </div>
+        <ul id="navbar_small">
+            <li><a href="#top" class="move">HOME</a></li>
+            <li><a href="#section_txt" class="move">ABOUT</a></li>
+            <li><a href="#section_txt2" class="move">ARTS</a></li>
+            <li><a href="#section_txt3" class="move">NEWS</a></li>
+            <li><a href="#section_con" class="move">CONTACT</a></li>
+            
+        </ul>
     </div>
+    
     <header>
         <div id="top">
             <div id="toptxt">
