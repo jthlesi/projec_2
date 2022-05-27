@@ -413,7 +413,6 @@ background: #f8f8f8;
 }
 
 .rev_box {
-    width: 440px;
     padding: 30px 30px 0 30px;
     height: 320px;
     background: white;
@@ -435,9 +434,11 @@ background: #f8f8f8;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .dot.on{
     background: orange;
 }
+
 .dot.active{
     background: orange;
 
