@@ -410,6 +410,7 @@ background: #f8f8f8;
     width:400%;
     height: 320px;
     position: absolute;
+    transition: all 0.5s ease;
 }
 
 .rev_box {

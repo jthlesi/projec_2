@@ -21,32 +21,28 @@ window.onresize = function () {
 
 // 슬라이드
 var wrapWidth = document.querySelector('#slide').offsetWidth;
-var boxWidth = document.querySelectorAll('.rev_box')
+var boxWidth = document.querySelectorAll('.rev_box');
+var slideBox = document.querySelector("#rev_slide");
 
 for(i=0;i<boxWidth.length;i++){
 boxWidth[i].style.width = wrapWidth / 3 +"px";
 }
 
-
 var idx = 0;
 function slide() {
-  $("#slide #rev_slide").animate({
-    "left": - wrapWidth / 3 +"px"
-  }, 1500);
+  slideBox.style.left = -wrapWidth / 3+'px';
 
   $(".dot").eq(idx+1).addClass("on").siblings().removeClass("on");
 
   idx++;
 
   if (idx > $("#slide #rev_slide .rev_box").length - 3) {
-    $("#slide #rev_slide").animate({
-      "left": 0
-    }, 1500);
+    slideBox.style.left =  "0px"
     idx = 0;
     $(".dot").eq(idx).addClass("on").siblings().removeClass("on");
   }
 }
 
-
-
 setInterval(slide, 3000);
+
+
