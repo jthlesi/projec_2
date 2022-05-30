@@ -4,8 +4,8 @@
 
 
 
-body {
-    overscroll-behavior-y: none;
+html, body {
+    overscroll-behavior:contain;
 }
 
 .fa:before {
@@ -86,17 +86,17 @@ nav {
 #small{
     display: none;
 }
+
 #small:hover{
     cursor: pointer;
 }
+
 #small i{
     font-size: 30px;
     position: absolute;
     top:20px;
     right: 30px;
 }
-
-
 
 #navbar a{
     color: black;
@@ -432,7 +432,6 @@ background: #f8f8f8;
     float:left;
     position: relative;
 }
-
 
 .pagination{
     margin: 0 auto;
