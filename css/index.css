@@ -7,7 +7,7 @@ html{
     overflow: hidden;
 }
 body {
-    overscroll-behavior: contain;
+    overscroll-behavior: none;
 }
 
 .fa:before {
