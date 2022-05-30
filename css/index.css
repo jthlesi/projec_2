@@ -4,7 +4,9 @@
 
 
 
-
+body {
+    overscroll-behavior-y: none;
+}
 
 .fa:before {
     font-family: 'Font Awesome 5 Free','Font Awesome 5 Brands';
