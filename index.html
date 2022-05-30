@@ -17,29 +17,44 @@
     <style>
         @media (max-width:599px) {
             #top h1 {
-                font-size: 14vw;
+                font-size: 9vw;
             }
 
             #top h2 {
-                font-size: 5vw;
+                margin-top: 30px;
+                font-size: 4vw;
             }
 
-            .gall {
-                width: 100%
+            #section_txt .container {
+            flex-wrap: nowrap;
+            padding: 20px;
+            margin-top: 130px;
+            margin-bottom: 130px;
             }
+
+            #section_txt h2 {
+    font-size: 5vw;
+    padding-left: 30px;
+}
 
             #section_cha .container {
                 flex-wrap: wrap;
             }
 
+
             #pic_cha {
                 width: 100%;
             }
 
+            #pic_cover {
+                left: 0;
+                right: 0;
+            }
+
             #txt_cha {
                 width: 100%;
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
                 padding-top: 10px;
             }
 
@@ -49,6 +64,14 @@
 
             #txt_cha p {
                 font-size: 3vw;
+            }
+
+            #section_txt2 p{
+    font-size: 3vw;
+}
+
+            .gall {
+                width: 100%
             }
 
             .hover {
@@ -69,7 +92,7 @@
             }
 
             .hover p {
-                font-size: 3vw;
+                font-size: 4vw;
                 padding: 50px 50px 0 50px;
             }
 
@@ -79,13 +102,24 @@
             }
 
             .icon {
-                width: 40%;
-                left: 40px
+                width: 30%;
+                left: 40px;
             }
 
             .count_txt {
-                width: 60%;
+                width: 70%;
             }
+            #rev_txt h2{
+    font-size: 10vw; 
+}
+
+#rev_txt p{
+    font-size: 4vw; 
+}
+.rev_box {
+    padding: 0px 20px 0 260px;
+}
+
 
             .exh_box {
                 width: 100%;
@@ -191,7 +225,7 @@
                 height: auto;
                 background: orange;
                 position: fixed;
-                top: -400px;
+                top: -100%;
                 left: 0;
             }
 
@@ -320,7 +354,7 @@
                 height: auto;
                 background: orange;
                 position: fixed;
-                top: -300px;
+                top: -100%;
                 left: 0;
             }
 
@@ -385,9 +419,9 @@
     <div id="sticky">
         <div class="container">
             <nav>
-                <div id="logo">
+                <a href="#top" id="logo" class="move">
                     <p>CM</p>
-                </div>
+                </a>
                 <ul id="navbar">
                     <li><a href="#top" class="move">HOME</a></li>
                     <li><a href="#section_txt" class="move">ABOUT</a></li>
@@ -458,16 +492,15 @@
     </div>
 
     <div id="section_pic" class="section">
-        <div class="gall">
+        <div class="gall" id="picture1">
             <div class="gal_pic" style="background-image:url(img/gal1.jpg)">
                 <div class="hover">
                     <h3>베레모를 쓴 자화상</h3>
                     <p> 1886<br> 캔버스에 유채<br> 46x56cm<br> 개인 소장</p>
                 </div>
             </div>
-
         </div>
-        <div class="gall">
+        <div class="gall" id="picture2">
             <div class="gal_pic" style="background-image:url(img/gal2.jpg)">
                 <div class="hover">
                     <h3>초록 드레스의 여인</h3>
@@ -475,7 +508,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture3">
             <div class="gal_pic" style="background-image:url(img/gal3.jpg)">
                 <div class="hover">
                     <h3>인상 해돋이</h3>
@@ -483,7 +516,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture4">
             <div class="gal_pic" style="background-image:url(img/gal4.jpg)">
                 <div class="hover">
                     <h3>파라솔을 든 여인</h3>
@@ -491,7 +524,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture5">
             <div class="gal_pic" style="background-image:url(img/gal5.jpg)">
                 <div class="hover">
                     <h3>일본 여인</h3>
@@ -499,7 +532,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture6">
             <div class="gal_pic" style="background-image:url(img/gal6.jpg)">
                 <div class="hover">
                     <h3>수련</h3>
@@ -507,7 +540,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture7">
             <div class="gal_pic" style="background-image:url(img/gal7.jpg)">
                 <div class="hover">
                     <h3>루앙 대성당</h3>
@@ -515,7 +548,7 @@
                 </div>
             </div>
         </div>
-        <div class="gall">
+        <div class="gall" id="picture8">
             <div class="gal_pic" style="background-image:url(img/gal8.jpg)">
                 <div class="hover">
                     <h3>국회 의사당</h3>
@@ -573,87 +606,95 @@
             <div id="slide">
                 <ul id="rev_slide">
                     <li class="rev_box">
-                        <div class="rev_top">
-                            <div class="rev_icon" style="background-image:url(img/rev1.jpeg)">
-                                <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-                            </div>
-                            <div class="rev_cha">
-                                <div class="rev_name">
-                                    <p>폴 세잔</p>
+                        <div class="rev_con">
+                            <div class="rev_top">
+                                <div class="rev_icon" style="background-image:url(img/rev1.jpeg)">
+                                    <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
                                 </div>
-                                <div class="rev_job">
-                                    <p>화가</p>
+                                <div class="rev_cha">
+                                    <div class="rev_name">
+                                        <p>폴 세잔</p>
+                                    </div>
+                                    <div class="rev_job">
+                                        <p>화가</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="rev_bot">
-                            <p>모네는 신의 눈을 가진 유일한 인간이다</p>
+                            <div class="rev_bot">
+                                <p>모네는 신의 눈을 가진 유일한 인간이다</p>
+                            </div>
                         </div>
                     </li>
                     <li class="rev_box">
-                        <div class="rev_top">
-                            <div class="rev_icon" style="background-image:url(img/rev2.png)">
-                                <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-                            </div>
-                            <div class="rev_cha">
-                                <div class="rev_name">
-                                    <p>박영남</p>
+                        <div class="rev_con">
+                            <div class="rev_top">
+                                <div class="rev_icon" style="background-image:url(img/rev2.png)">
+                                    <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
                                 </div>
-                                <div class="rev_job">
-                                    <p>작가</p>
+                                <div class="rev_cha">
+                                    <div class="rev_name">
+                                        <p>박영남</p>
+                                    </div>
+                                    <div class="rev_job">
+                                        <p>작가</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="rev_bot">
-                            <p>그림. 무언가로 보이면 그것으로 족하다</p>
+                            <div class="rev_bot">
+                                <p>그림. 무언가로 보이면 그것으로 족하다</p>
+                            </div>
                         </div>
                     </li>
                     <li class="rev_box">
-                        <div class="rev_top">
-                            <div class="rev_icon" style="background-image:url(img/rev3.jpg)">
-                                <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-                            </div>
-                            <div class="rev_cha">
-                                <div class="rev_name">
-                                    <p>루이 루르아</p>
+                        <div class="rev_con">
+                            <div class="rev_top">
+                                <div class="rev_icon" style="background-image:url(img/rev3.jpg)">
+                                    <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
                                 </div>
-                                <div class="rev_job">
-                                    <p>비평가</p>
+                                <div class="rev_cha">
+                                    <div class="rev_name">
+                                        <p>루이 루르아</p>
+                                    </div>
+                                    <div class="rev_job">
+                                        <p>비평가</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="rev_bot">
-                            <p>이제 막 그리기 시작한 벽지도 이 바다 풍경보다는 더 완성된 상태일 것</p>
+                            <div class="rev_bot">
+                                <p>이제 막 그리기 시작한 벽지도 이 바다 풍경보다는 더 완성된 상태일 것</p>
+                            </div>
                         </div>
                     </li>
                     <li class="rev_box">
-                        <div class="rev_top">
-                            <div class="rev_icon" style="background-image:url(img/rev3.jpg)">
-                                <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
-                            </div>
-                            <div class="rev_cha">
-                                <div class="rev_name">
-                                    <p>브리태니커</p>
+                        <div class="rev_con">
+                            <div class="rev_top">
+                                <div class="rev_icon" style="background-image:url(img/rev3.jpg)">
+                                    <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
                                 </div>
-                                <div class="rev_job">
-                                    <p>백과사전</p>
+                                <div class="rev_cha">
+                                    <div class="rev_name">
+                                        <p>브리태니커</p>
+                                    </div>
+                                    <div class="rev_job">
+                                        <p>백과사전</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="rev_bot">
-                            <p>클로드 모네는 인상주의 회화의 창시자, 지도자, 확고한 지지자였던 프랑스의 화가입니다. 서양 미술사에서 가장 중요하고 인기 있는 인물 중 한 명으로 명성을
-                                유지했습니다</p>
+                            <div class="rev_bot">
+                                <p>클로드 모네는 인상주의 회화의 창시자, 지도자, 확고한 지지자였던 프랑스의 화가입니다. 서양 미술사에서 가장 중요하고 인기 있는 인물 중 한 명으로
+                                    명성을
+                                    유지했습니다</p>
+                            </div>
                         </div>
                     </li>
             </div>
             <div class="pagination">
-                <ul>
+                <ul id="pagi_list">
                     <li class="dot on"></li>
                     <li class="dot"></li>
                 </ul>
             </div>
         </div>
-        <script src="javascript/javascript.js"></script>
     </div>
     </div>
 
@@ -771,9 +812,9 @@
         <div class="section">
             <div class="container">
                 <div id="foot_left">
-                    <div id="logo">
+                    <a href="#top" id="logo" class="move">
                         <p>CM</p>
-                    </div>
+                    </a>
                     <div id="logo_txt">
                         <p> French painter and founder of impressionist painting who is seen as a key precursor to
                             modernism, especially in his attempts to paint nature as he perceived it.</p>
@@ -787,17 +828,17 @@
                 <div id="foot_center">
                     <h2>Category</h2>
                     <ul id="foot_list">
-                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>회화</a></li>
-                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>연작</a>
+                        <li><a href="#picture1" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>회화</a></li>
+                        <li><a href="#picture6" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>연작</a>
                             <ul id="foot_list2">
-                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>수련</a></li>
-                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>루앙 대성당</a>
+                                <li><a href="#picture6" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>수련</a></li>
+                                <li><a href="#picture7" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>루앙 대성당</a>
                                 </li>
-                                <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>국회 의사당 </a>
+                                <li><a href="#picture8" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>국회 의사당 </a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#"><span class="iconify" data-icon="ion:arrow-forward"></span>관련 작품</a></li>
+                        <li><a href="#picture1" class="move"><span class="iconify" data-icon="ion:arrow-forward"></span>관련 작품</a></li>
                     </ul>
                 </div>
                 <div id="foot_right">
@@ -826,6 +867,7 @@
             </div>
         </div>
     </footer>
+    <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
