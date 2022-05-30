@@ -4,8 +4,8 @@
 
 
 
-html, body {
-    overscroll-behavior:contain;
+body {
+    overscroll-behavior: none;
 }
 
 .fa:before {
