@@ -20,7 +20,6 @@ var slideBox = document.querySelectorAll('.rev_box');
 var slidesBox = document.querySelector("#rev_slide");
 var idx = 0;
 
-
 if (window.matchMedia("(min-width:1000px)").matches) {
   for (i = 0; i < slideBox.length; i++) {
     slideBox[i].style.width = wrapWidth / 3 + "px";
