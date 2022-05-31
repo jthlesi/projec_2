@@ -5,8 +5,7 @@
 
 
 body {
-    overscroll-behavior: none;
-    position: fixed;
+    overscroll-behavior: contain;
 }
 
 .fa:before {
