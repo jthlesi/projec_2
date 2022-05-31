@@ -33,7 +33,7 @@ if (window.matchMedia("(min-width:1000px)").matches) {
     idx++;
 
     if (idx > $("#slide #rev_slide .rev_box").length - 3) {
-      slidesBox.style.left = "0px"
+      slidesBox.style.left = "0px";
       idx = 0;
       $(".dot").eq(idx).addClass("on").siblings().removeClass("on");
     };
@@ -43,19 +43,20 @@ if (window.matchMedia("(min-width:1000px)").matches) {
     slideBox[i].style.width = wrapWidth / 2 + "px";
   };
 
+  for(i=0;i<1;i++){
   var li = document.createElement("li");
   li.setAttribute("class", "dot");
   $("#pagi_list").append(li);
-
+  };
+  
   function slide() {
     slidesBox.style.left = -(wrapWidth / 2) * (idx + 1) + 'px';
-
     $(".dot").eq(idx + 1).addClass("on").siblings().removeClass("on");
 
     idx++;
 
     if (idx > $("#slide #rev_slide .rev_box").length - 2) {
-      slidesBox.style.left = "0px"
+      slidesBox.style.left = "0px";
       idx = 0;
       $(".dot").eq(idx).addClass("on").siblings().removeClass("on");
     };
@@ -76,10 +77,10 @@ if (window.matchMedia("(min-width:1000px)").matches) {
 
     $(".dot").eq(idx + 1).addClass("on").siblings().removeClass("on");
 
-    idx++
-    ;
+    idx++;
+    
     if (idx > $("#slide #rev_slide .rev_box").length - 1) {
-      slidesBox.style.left = "0px"
+      slidesBox.style.left = "0px";
       idx = 0;
       $(".dot").eq(idx).addClass("on").siblings().removeClass("on");
     };
