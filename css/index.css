@@ -581,12 +581,11 @@ background: #f8f8f8;
 }
 
 #section_exh span{
-    font-size: 2vh; 
     color:orange
 }
 
 #section_exh h2 {
-    font-size: 4vh; 
+    font-size: 2vw; 
     font-weight: 700;
     letter-spacing: 3px;
     margin: 10px 0 20px 0;
@@ -596,8 +595,8 @@ background: #f8f8f8;
     color:orange;
     transition: all 0.3s ease-in;
 }
-#section_exh p{
-    font-size: 2vh; 
+#section_exh p, span{
+    font-size: 1vw; 
 }
 
 .exh_txt p:first-child{
@@ -605,6 +604,7 @@ background: #f8f8f8;
 }
 
 .exh_txt p:last-child{
+    padding-top: 20px;
     color: #4d4d4d;
 }
 

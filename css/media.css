@@ -1,0 +1,408 @@
+@media (max-width:599px) {
+    #top h1 {
+        font-size: 9vw;
+    }
+
+    #top h2 {
+        margin-top: 30px;
+        font-size: 5vw;
+    }
+
+    #section_txt .container {
+        flex-wrap: nowrap;
+        padding: 20px;
+        margin-top: 130px;
+        margin-bottom: 130px;
+    }
+
+    #section_txt h2 {
+        font-size: 5vw;
+        padding-left: 30px;
+    }
+
+    #section_cha .container {
+        flex-wrap: wrap;
+    }
+
+
+    #pic_cha {
+        width: 100%;
+        height: 500px;
+    }
+
+    #pic_cover {
+        left: 0;
+        right: 0;
+    }
+
+    #pic_photo{
+        height: 500px;
+        top:-300px
+    }
+
+    #txt_cha {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+
+    #txt_cha h2 {
+        font-size: 8vw;
+    }
+
+    #txt_cha p {
+        font-size: 4vw;
+    }
+
+    #section_txt2 p {
+        font-size: 3.5vw;
+    }
+
+    .gall {
+        width: 100%
+    }
+
+    .hover {
+        opacity: 0.5;
+        background: #000000;
+        color: white;
+        text-align: center;
+    }
+
+    .gal_pic:hover .hover {
+        opacity: 0.8;
+        background: black;
+    }
+
+    .hover h3 {
+        font-size: 6vw;
+        padding: 100px 50px 0 50px;
+    }
+
+    .hover p {
+        font-size: 4vw;
+        padding: 50px 50px 0 50px;
+    }
+
+    .count {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .icon {
+        width: 30%;
+        left: 40px;
+    }
+
+    .count_txt {
+        width: 70%;
+    }
+
+    #rev_txt h2 {
+        font-size: 10vw;
+    }
+
+    #rev_txt p {
+        font-size: 4vw;
+    }
+
+    .rev_box {
+        padding: 0px 20px 0 20px;
+    }
+
+
+    .exh_box {
+        width: 100%;
+    }
+
+    #section_exh h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #section_exh p, span {
+        font-size: 4vw;
+    }
+
+    #wrap_con {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .mybox {
+        width: 100%;
+        height: auto;
+        word-wrap: normal;
+    }
+
+    #section_con {
+        flex-direction: column-reverse;
+    }
+
+    #map {
+        width: 100%;
+        height: 500px;
+    }
+
+    #con_box {
+        width: 100%;
+    }
+
+    #foot_left {
+        width: 100%;
+        height: auto;
+    }
+
+    #name {
+        width: 100%;
+    }
+
+    #mail {
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    #foot_left {
+        padding: 0 30px;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
+
+    footer h2 {
+        font-size: 7vw;
+    }
+
+    #foot_center {
+        margin-top: 100px;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    #foot_center a {
+        font-size: 3vw;
+    }
+
+    #foot_right {
+        margin-top: 100px;
+        width: 100%;
+        padding: 0 30px;
+
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    #small {
+        display: block;
+    }
+
+    #navbar {
+        width: 50%;
+        display: none;
+    }
+
+    #navbar_small {
+        padding-right: 30px;
+        width: 100%;
+        height: auto;
+        background: orange;
+        position: fixed;
+        top: -100%;
+        left: 0;
+    }
+
+    #navbar_small.open {
+        top: 75px;
+    }
+
+
+    #logo {
+        margin-left: 30px;
+    }
+
+    footer #logo {
+        margin-left: 10px;
+    }
+
+    #navbar_small li a {
+        display: block;
+        color: black;
+        font-size: 4vh;
+        text-align: left;
+        line-height: 2;
+        margin-left: 30px;
+    }
+
+}
+
+
+@media (min-width:600px) and (max-width:1000px) {
+    #top h1 {
+        font-size: 14vw;
+        ;
+    }
+
+    #top h2 {
+        font-size: 4vw;
+    }
+
+    #section_txt h2 {
+        font-size: 3vw;
+    }
+
+    #txt_cha h2 {
+        font-size: 5vw;
+    }
+
+    #txt_cha p {
+        font-size: 2vw;
+    }
+
+    .gall {
+        width: 50%
+    }
+
+    .hover {
+        opacity: 0.5;
+        background: #000000;
+        color: white;
+        text-align: center;
+    }
+
+    .gal_pic:hover .hover {
+        opacity: 0.8;
+        background: black;
+    }
+
+    .hover h3 {
+        font-size: 4vw;
+        padding: 60px 50px 0 50px;
+    }
+
+    .hover p {
+        font-size: 2vw;
+        padding: 50px 50px 0 50px;
+    }
+
+    .count {
+        width: 50%;
+    }
+
+    .exh_box {
+        width: 50%;
+    }
+
+    #section_exh h2 {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #section_exh p, span {
+        font-size: 2vw;
+    }
+
+    #wrap_con {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .mybox {
+        width: 100%;
+        height: auto;
+        word-wrap: normal;
+    }
+
+    #foot_left {
+        width: 50%;
+        height: auto;
+    }
+
+    #foot_center {
+        width: 40%
+    }
+
+    #foot_right {
+        margin-top: 100px;
+        width: 70%
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    #small {
+        display: block;
+    }
+
+    #navbar {
+        width: 50%;
+        display: none;
+    }
+
+    #navbar_small {
+        padding-right: 30px;
+        width: 100%;
+        height: auto;
+        background: orange;
+        position: fixed;
+        top: -100%;
+        left: 0;
+    }
+
+    #navbar_small.open {
+        top: 75px;
+    }
+
+
+    #logo {
+        margin-left: 30px;
+    }
+
+    #navbar_small li a {
+        display: block;
+        color: black;
+        font-size: 4vh;
+        text-align: left;
+        line-height: 2;
+        margin-left: 30px;
+    }
+
+    #sticky {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width:1000px) and (max-width:1320px) {
+    .container {
+        width: 100%
+    }
+
+    #top h1 {
+        font-size: 14vw;
+        ;
+    }
+
+    #sticky {
+        width: 100%
+    }
+
+    #navbar a {
+        font-size: 1.5vw;
+    }
+
+    #navbar_small {
+        display: none;
+    }
+}
+
+@media (min-width:1320px) {
+    #navbar_small {
+        display: none;
+    }
+}
