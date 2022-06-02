@@ -220,12 +220,11 @@
         top: 75px;
     }
 
-
-    #logo {
+    .logo {
         margin-left: 30px;
     }
 
-    footer #logo {
+    footer .logo {
         margin-left: 10px;
     }
 
@@ -359,7 +358,7 @@
     }
 
 
-    #logo {
+    .logo {
         margin-left: 30px;
     }
 
